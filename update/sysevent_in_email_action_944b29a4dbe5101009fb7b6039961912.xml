@@ -3,7 +3,7 @@
         <action>record_action</action>
         <active>true</active>
         <assignment_operator/>
-        <condition_script/>
+        <condition_script>email.subject.toLowerCase().indexOf("please close needit task") &gt;= 0</condition_script>
         <description>Close a NeedIt Task when inbound email for closing task is received.</description>
         <event_name>email.read</event_name>
         <filter_condition/>
@@ -24,7 +24,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>944b29a4dbe5101009fb7b6039961912</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Close NeedIt Task</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sysevent_in_email_action_944b29a4dbe5101009fb7b6039961912</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-06-18 17:51:18</sys_updated_on>
+        <sys_updated_on>2020-08-02 01:39:18</sys_updated_on>
         <table>x_58872_needit_needit_task</table>
         <template>state=3^EQ</template>
         <type>reply</type>
